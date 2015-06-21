@@ -104,13 +104,6 @@ implements Runnable
     @Override
     public void run() {
         QueueHandler.showMessage("начал работу");
-        /*for (Map.Entry<Integer, LockableQueue<Element>> entrySet : groupQueues.entrySet()) {
-            Integer key = entrySet.getKey();
-            LockableQueue<Element> value = entrySet.getValue();
-            for (Element value1 : value) {
-                System.out.println(key + "; " + value1.getItemID());
-            }
-        };*/
         amountOfProcessedElements = 0;
         workIsOver = false;
         Process curProcess;
